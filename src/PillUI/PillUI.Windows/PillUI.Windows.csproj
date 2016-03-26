@@ -130,7 +130,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PillUI\PillUI.App.csproj">
+    <ProjectReference Include="..\PillUI.App\PillUI.App.csproj">
       <Name>PillUI.App</Name>
       <Project>{7F687CDA-7D42-49EA-9874-D74A761B053A}</Project>
     </ProjectReference>
