@@ -21,6 +21,10 @@ namespace PillUI
 						new Label {
 							XAlign = TextAlignment.Center,
 							Text = "Welcome to PillUI!"
+						},
+						new Pill()
+						{
+							HorizontalOptions = LayoutOptions.Center
 						}
 					}
 				}
