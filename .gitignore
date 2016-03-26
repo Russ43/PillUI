@@ -5,6 +5,8 @@
 # ignore Visual Studio user-specific files
 *.suo
 *.user
+*.csproj.bak
+*.lock.json
 
 # ignore output directories
 [Oo]bj/

@@ -8,8 +8,8 @@
     <ProjectGuid>{063CA9D3-0651-4BB2-8F52-532C06FAB7E6}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-	<BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-	<OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PillUI.Droid</RootNamespace>
     <AssemblyName>PillUI.Droid</AssemblyName>
@@ -19,7 +19,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
