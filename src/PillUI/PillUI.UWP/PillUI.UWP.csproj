@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{F262E1AA-9194-472E-9D69-9DC814941F15}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
-	<BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-	<OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PillUI.UWP</RootNamespace>
     <AssemblyName>PillUI.UWP</AssemblyName>
@@ -124,8 +124,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PillUI\PillUI.csproj">
-      <Name>PillUI</Name>
+    <ProjectReference Include="..\PillUI\PillUI.App.csproj">
+      <Name>PillUI.App</Name>
+      <Project>{7F687CDA-7D42-49EA-9874-D74A761B053A}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

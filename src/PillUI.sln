@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillUI.UWP", "PillUI\PillUI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillUI.Windows", "PillUI\PillUI.Windows\PillUI.Windows.csproj", "{234A67A8-08A7-4C24-81A4-FE6E23F9FC58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillUI", "PillUI\PillUI\PillUI.csproj", "{7F687CDA-7D42-49EA-9874-D74A761B053A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillUI.App", "PillUI\PillUI\PillUI.App.csproj", "{7F687CDA-7D42-49EA-9874-D74A761B053A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

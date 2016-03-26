@@ -8,8 +8,8 @@
     <ProjectGuid>{89B26024-9A4B-4988-95FD-5822C9FC3DD1}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-	<BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-	<OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\obj\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>..\..\..\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)\</OutputPath>
     <RootNamespace>PillUI.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>PillUIiOS</AssemblyName>
@@ -94,8 +94,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PillUI\PillUI.csproj">
-      <Name>PillUI</Name>
+    <ProjectReference Include="..\PillUI\PillUI.App.csproj">
+      <Name>PillUI.App</Name>
+      <Project>{7F687CDA-7D42-49EA-9874-D74A761B053A}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
