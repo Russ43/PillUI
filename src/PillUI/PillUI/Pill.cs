@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace PillUI
 {
-	public class Pill : StackLayout
+	public class Pill : ContentView
 	{
 		public Pill()
 		{
@@ -15,7 +15,7 @@ namespace PillUI
 			{
 				Text = "PiLL"
 			};
-			Children.Add(label);
+			Content = label;
 		}
 	}
 }
