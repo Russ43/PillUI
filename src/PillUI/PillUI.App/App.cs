@@ -30,6 +30,18 @@ namespace PillUI
 				}
 			);
 			pill.Cells.Add(
+				new EntryPillCell()
+				{
+					Placeholder = "Entry Pill",
+					CompletedCommand = new DelegateCommand(
+						(p) =>
+						{
+							Application.Current.MainPage.DisplayAlert("PillUI", "Entry Pill completed!", "OK");
+						}
+					)
+				}
+			);
+			pill.Cells.Add(
 				new ButtonPillCell()
 				{
 					Text = "Button Pill Alpha",
