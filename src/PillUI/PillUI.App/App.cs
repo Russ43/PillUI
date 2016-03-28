@@ -11,6 +11,23 @@ namespace PillUI
 	{
 		public App()
 		{
+			Pill pill = new Pill()
+			{
+				HorizontalOptions = LayoutOptions.Center,
+			};
+			pill.Cells.Add(
+				new TextPillCell()
+				{
+					Text = "Text Pill #1"
+				}
+			);
+			pill.Cells.Add(
+				new TextPillCell()
+				{
+					Text = "Text Pill #2"
+				}
+			);
+
 			// The root page of your application
 			MainPage = new ContentPage
 			{
@@ -22,13 +39,11 @@ namespace PillUI
 							XAlign = TextAlignment.Center,
 							Text = "Welcome to PillUI!"
 						},
-						new Pill()
-						{
-							HorizontalOptions = LayoutOptions.Center
-						}
+						pill
 					}
 				}
 			};
+			
 		}
 
 		protected override void OnStart()
