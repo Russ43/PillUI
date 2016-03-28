@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Input;
 
 using Xamarin.Forms;
+
 
 namespace PillUI
 {
@@ -25,6 +27,18 @@ namespace PillUI
 				new TextPillCell()
 				{
 					Text = "Text Pill #2"
+				}
+			);
+			pill.Cells.Add(
+				new ButtonPillCell()
+				{
+					Text = "Button Pill Alpha",
+					Command = new DelegateCommand(
+						(p) =>
+						{
+							Application.Current.MainPage.DisplayAlert("PillUI", "Button Pill Alpha Clicked!", "OK");
+						}
+					)
 				}
 			);
 

@@ -35,6 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ButtonPillCell.cs" />
+    <Compile Include="Common\DelegateCommand.cs" />
     <Compile Include="Common\ViewModelBase.cs" />
     <Compile Include="Pill.cs" />
     <Compile Include="PillCell.cs" />
