@@ -13,6 +13,15 @@ namespace PillUI
 {
 	public class Pill : ContentView
 	{
+		// bindable properties
+		static public readonly BindableProperty AreChildrenVisibleProperty = BindableProperty.Create(
+			"AreChildrenVisible",
+			typeof(bool),
+			typeof(Pill),
+			false
+		);
+
+
 		// fields
 		private StackLayout _cellsStackLayout;
 		private StackLayout _childrenStackLayout;
@@ -32,7 +41,7 @@ namespace PillUI
 			_childrenStackLayout = new StackLayout();
 			mainStackLayout.Children.Add(_childrenStackLayout);
 			_childrenStackLayout.Orientation = StackOrientation.Vertical;
-			_childrenStackLayout.IsVisible = true;
+			_childrenStackLayout.IsVisible = false;
 
 			Cells = new ObservableCollection<PillCell>();
 			Children = new ObservableCollection<Pill>();
@@ -43,6 +52,19 @@ namespace PillUI
 
 
 		// properties
+		public bool AreChildrenVisible
+		{
+			get
+			{
+				return (bool) GetValue(AreChildrenVisibleProperty);
+			}
+			set
+			{
+				SetValue(AreChildrenVisibleProperty, value);
+				_childrenStackLayout.IsVisible = AreChildrenVisible;
+			}
+		}
+
 		public ObservableCollection<PillCell> Cells
 		{
 			get;

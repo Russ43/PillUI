@@ -58,9 +58,24 @@ namespace PillUI
 			// populate cells
 			bool hasChildren = (fields.Count + properties.Count > 0);
 			if(hasChildren)
-				Cells.Add(new ButtonPillCell() { Text = ">" });
+			{
+				ButtonPillCell expandCollapseCell = new ButtonPillCell()
+				{
+					Text = ">"
+				};
+				expandCollapseCell.Command = new DelegateCommand(
+					(p) =>
+					{
+						AreChildrenVisible = !AreChildrenVisible;
+						expandCollapseCell.Text = AreChildrenVisible ? "v" : ">";
+					}
+				);
+				Cells.Add(expandCollapseCell);
+			}
 			else
+			{
 				Cells.Add(new TextPillCell() { Text = "-" });
+			}
 			Cells.Add(new TextPillCell() { Text = string.Format("{0}: ", Name) });
 			if(hasChildren)
 				Cells.Add(new TextPillCell() { Text = Entity.ToString() });
