@@ -28,7 +28,7 @@ namespace PillUI.WinPhone
 
 			this.NavigationCacheMode = NavigationCacheMode.Required;
 
-			LoadApplication(new PillUI.App());
+			LoadApplication(new PillUI.App.App());
 		}
 
 		/// <summary>

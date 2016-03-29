@@ -21,7 +21,7 @@ namespace PillUI.UWP
 		{
 			this.InitializeComponent();
 
-			LoadApplication(new PillUI.App());
+			LoadApplication(new PillUI.App.App());
 		}
 	}
 }

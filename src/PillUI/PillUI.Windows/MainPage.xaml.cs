@@ -21,7 +21,7 @@ namespace PillUI.Windows
 		{
 			this.InitializeComponent();
 
-			LoadApplication(new PillUI.App());
+			LoadApplication(new PillUI.App.App());
 		}
 	}
 }

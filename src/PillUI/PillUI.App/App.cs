@@ -7,7 +7,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 
 
-namespace PillUI
+namespace PillUI.App
 {
 	public class App : Application
 	{
@@ -49,6 +49,26 @@ namespace PillUI
 						(p) =>
 						{
 							Application.Current.MainPage.DisplayAlert("PillUI", "Button Pill Alpha Clicked!", "OK");
+						}
+					)
+				}
+			);
+			pill.Cells.Add(
+				new ButtonPillCell()
+				{
+					Text = "Open Entity Editor Page",
+					Command = new DelegateCommand(
+						(p) =>
+						{
+							// TODO: switch to a NavigationPage model
+							TestEntity entity = new TestEntity();
+							entity.A = "a";
+							entity.B = "b";
+							entity.Person = new Person();
+							entity.Person.FirstName = "Jane";
+							entity.Person.LastName = "Doe";
+							AppEntityEditorPage page = new AppEntityEditorPage(entity);
+							MainPage = page;
 						}
 					)
 				}

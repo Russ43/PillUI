@@ -32,7 +32,7 @@ namespace PillUI
 			_childrenStackLayout = new StackLayout();
 			mainStackLayout.Children.Add(_childrenStackLayout);
 			_childrenStackLayout.Orientation = StackOrientation.Vertical;
-			_childrenStackLayout.IsVisible = false;
+			_childrenStackLayout.IsVisible = true;
 
 			Cells = new ObservableCollection<PillCell>();
 			Children = new ObservableCollection<Pill>();
